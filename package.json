@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "scripts": {
+  "dev": "concurrently \"cd server && yarn dev\" \"cd client && yarn dev\""
+}
+
+  }
+}
