@@ -2,14 +2,13 @@
 import { useState, useEffect } from 'react';
 
 export default function EmeraldsDisplay() {
-  const [emeralds, setEmeralds] = useState(0);  // Initialize emeralds state
+  const [emeralds, setEmeralds] = useState(0);
 
-  // Fetch emeralds from your database (or state management)
   useEffect(() => {
     const fetchEmeralds = async () => {
-      const response = await fetch('/api/emeralds'); // Endpoint that fetches user's emeralds
+      const response = await fetch('/api/emeralds');
       const data = await response.json();
-      setEmeralds(data.emeralds);  // Update emeralds state with fetched data
+      setEmeralds(data.emeralds);  
     };
 
     fetchEmeralds();
