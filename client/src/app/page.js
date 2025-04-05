@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <main className={styles.title}>
-      <h1>Redstone Remind</h1>
+      <h1>Redstone Recall</h1>
       <button onClick={handleStart}>Start</button>
     </main>
   );

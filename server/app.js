@@ -13,6 +13,10 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/users', usersRouter);
 
+const quizsetRouter = require('./routes/quizsets'); 
+app.use('/api/quizsets', quizsetRouter);
+
+
 dotenv.config();
 
 mongoose.connect(process.env.DB_URL).then(() => {
